@@ -1,4 +1,4 @@
-gene_file = 'Salmonella_enterica.txt'
+gene_file = 'Datasets/Salmonella_enterica.txt'
 import deamination as deamin
 from matplotlib import pyplot as plt
 
@@ -9,12 +9,12 @@ def clean_file():
         for line in file:
             genome += line.strip()
 
-    out = 'Salmonella_enterica_clean.txt'
+    out = 'Datasets/Salmonella_enterica_clean.txt'
     file = open(out, 'w', encoding='utf-8')
     file.write(genome)
 
 
-cleaned = open('Vibrio_cholerae.txt', 'r', encoding='utf-8')
+cleaned = open('Datasets/Vibrio_cholerae.txt', 'r', encoding='utf-8')
 genome = ''
 for line in cleaned:
     genome = line
